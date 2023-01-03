@@ -1,0 +1,34 @@
+:root{
+
+	@include a-set($root-vars);
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+::selection{
+	color: var(--color-white);
+	background-color: var(--color-blue);
+}
+body,html{
+	overflow-x: hidden;
+}
+body.is-menu-open{
+	overflow: hidden;
+}
+.display-none{
+	display: none;
+}
+.b-home{
+	background-color: var(--color-white);
+	height: 100vh;
+	&__col{
+		height: 100vh;
+		display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+    	align-items: center;
+	}
+}
